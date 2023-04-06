@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 10px solid #8B4513;
+  border-radius: 10px;
+  background-color: #F5DEB3;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 4em;
+  text-align: center;
+  line-height: 100px;
+  color: #8B4513;
+  border: 5px solid #8B4513;
+  background-color: #F5DEB3;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.square:hover {
+  background-color: #8B4513;
+  color: #F5DEB3;
+}
+
+.square-x {
+  background-image: url('https://cmu-313.github.io/assets/images/hilton.jpg');
+  background-size: 100px;
+}
+
+.square-o {
+  background-image: url('https://cmu-313.github.io/assets/images/hyrum.jpg');
+  background-size: 100px;
+}

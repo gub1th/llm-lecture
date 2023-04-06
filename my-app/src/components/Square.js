@@ -1,15 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
 
-const Square = ({ value, onClick }) => (
-  <button className="square" onClick={onClick}>
-    {value}
-  </button>
-);
+const Square = ({ value, onClick }) => {
+  const imageUrl = value === "X" ? "https://cmu-313.github.io/assets/images/hilton.jpg" : "https://cmu-313.github.io/assets/images/hyrum.jpg";
 
-Square.propTypes = {
-  value: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
+  return (
+    <button className="square" onClick={onClick}>
+      <img src={imageUrl} alt={value} />
+    </button>
+  );
 };
 
 export default Square;
